@@ -1,2 +1,2 @@
-# Ablasshandel
+# ablasshandel
 individueller Ablassbriefe sekundenschnell generiert
