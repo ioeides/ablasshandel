@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<script src="ablass.js"></script> 
+		<title>digitaler Ablasshandel</title>
+	</head>
+	<body onload="init()">
+	
+    <div class="container invisible">
+    <h1>Willkommen beim digitalen Ablasshandel</h1>
+    <h2>individueller Ablassbriefe - sekundenschnell generiert</h2>
+    </div>
+
+    <div class="container" >
+      <h3>Ablassbrief</h3>
+      <form action="">
+        <div class="optionsfeld">      <!-- Name -->
+          <label for="name">Dein Name</label>
+          <br>
+          <input type="text" id="name" placeholder="Name">
+        </div>
+        <div class="optionsfeld">      <!-- Sünde -->
+          <p>Was hast du angestellt?</p>
+          <input type="radio" id="ebay" name="suende">
+          <label for="ebay">Nachts unnötiges Zeug bestellt ("Ebay-Unfall")</label>
+          <br>
+          <input type="radio" id="semi" name="suende">
+          <label for="semi">Semikolon vergessen</label>
+          <br>
+          <input type="radio" id="i" name="suende">
+          <label for="i">...</label>
+          <br>
+          <input type="radio" id="other" name="suende">
+          <label for="other">
+            <input type="text" placeholder="andere Sünde">
+          </label>
+        </div>
+        <div class="optionsfeld">      <!-- Buße -->
+          <p>Deine Buße:</p>
+          <p id="busse"></p>
+        </div>
+      </form>
+    </div>
+    <div class="container">
+      <button onclick="changeBusse();" class="invisible print-button">Buße änderen</button>
+      <button onclick="createPDF();" class="invisible print-button">Ablassbrief erzeugen</button>
+    </div>
+	</body>
+</html>
